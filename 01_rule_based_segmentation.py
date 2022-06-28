@@ -1,3 +1,12 @@
+"""
+Author: Oguz Erdogan, Miuul
+https://www.linkedin.com/in/oguzerdo/
+
+https://github.com/oguzerdo/rule_based_segmentation/blob/main/01_rule_based_segmentation.py
+
+"""
+
+
 # Portekizde bulunan bir otele ait bu veri setinde 2015-2018 boyunca konukların
 # bazı demografik bilgileri ve rezervasyon ile ilgili bilgileri yer almakta.
 # Otel, konuklarının bazı özelliklerini kullanarak seviye tabanlı (level based )
