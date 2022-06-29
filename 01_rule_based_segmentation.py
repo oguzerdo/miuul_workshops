@@ -62,7 +62,7 @@ pd.set_option("display.width", 500)
 # data.csv dosyasını okutunuz ve veri seti ile ilgili genel bilgileri gösteriniz.
 import pandas as pd
 
-data = pd.read_csv('datasets/data.csv', sep="|")
+data = pd.read_csv('data/data.csv', sep="|")
 
 # Bu şekilde bir işlem yapmamalıyız.
 yedek = data
