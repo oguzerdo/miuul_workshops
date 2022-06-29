@@ -6,7 +6,6 @@ https://github.com/oguzerdo/rule_based_segmentation/blob/main/01_rule_based_segm
 
 """
 
-
 # Portekizde bulunan bir otele ait bu veri setinde 2015-2018 boyunca konukların
 # bazı demografik bilgileri ve rezervasyon ile ilgili bilgileri yer almakta.
 # Otel, konuklarının bazı özelliklerini kullanarak seviye tabanlı (level based )
@@ -63,7 +62,7 @@ pd.set_option("display.width", 500)
 # data.csv dosyasını okutunuz ve veri seti ile ilgili genel bilgileri gösteriniz.
 import pandas as pd
 
-data = pd.read_csv('../datasets/data.csv', sep="|")
+data = pd.read_csv('datasets/data.csv', sep="|")
 
 # Bu şekilde bir işlem yapmamalıyız.
 yedek = data
@@ -76,7 +75,7 @@ yedek["Age"] = yedek["Age"].apply(lambda x: x * x)
 yedek.head()
 data.head()
 
-data = pd.read_csv('../datasets/data.csv', sep="|")
+data = pd.read_csv('datasets/data.csv', sep="|")
 
 # Bu şekilde kullanmalıyız.
 df = data.copy()
@@ -88,7 +87,8 @@ data.head()
 ### Veriyi anlama
 
 
-data = pd.read_csv('../datasets/data.csv', sep="|")
+data = pd.read_csv('datasets/data.csv', sep="|")
+df = data.copy()
 df.head()
 
 #    ID Nationality   Age  LeadTime  LodgingRevenue  OtherRevenue Channel
@@ -97,6 +97,8 @@ df.head()
 # 2  12         FRA  58.0        60           292.0          81.0   Agent
 # 3  14         ESP  42.0        87           327.7          48.0  Direct
 # 4  16         FRA  68.0        11           437.0          36.0   Agent
+
+df.shape
 
 df.info()
 
